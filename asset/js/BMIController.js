@@ -27,6 +27,7 @@ var BMIController = {
 	showResult: function(result) {
 		var spanResult = document.querySelector('.result');
 		spanResult.innerHTML = result.toFixed(2);
+        BMIService.getDescription(result);
 	},
 
 };
